@@ -36,3 +36,32 @@ input {
 img {
 	max-width: 300px;
 }
+
+.btn-success {
+  background-color: red;
+  padding: 14px 28px;
+  font-size: 20px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.btn-successs {
+  background-color: rgb(60, 150, 24);
+  padding: 7px 14px;
+  font-size: 20px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.small-rectangle{
+	width:11vw;
+    height:5vh; 
+    background-color: rgb(0, 0, 0);
+    margin-left: 3px;
+	display: flex;
+	flex-direction: column-reverse;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: stretch;
+	align-content: stretch;
+}
