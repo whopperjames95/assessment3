@@ -65,3 +65,18 @@ img {
 	align-items: stretch;
 	align-content: stretch;
 }
+
+#color {
+	height:8vh; 
+    background-color: rgb(19, 150, 148);
+}
+
+#place {
+	height:6vh; 
+    background-color: rgb(129, 48, 142);
+}
+
+#ritual {
+	height:4vh; 
+    background-color: rgb(230, 237, 29);
+}
