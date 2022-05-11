@@ -1,22 +1,3 @@
-//grab html element
-const colorBtn = document.getElementById("color");
-const placeBtn = document.getElementById("place");
-const ritualBtn = document.getElementById("ritual");
-
-
-
-
-
-
-
-//write out function
-let count = 0
-
-function myFaveColor() {
-    count++;
-    console.log(count);
-    counterText.textContent = count;
-}
 
 
 
@@ -25,10 +6,9 @@ function myFaveColor() {
 
 
 
-//combine everything together using addEventListener
-colorBtn.addEventListener("click", myFaveColor);
-placeBtn.addEventListener("click", myFavePlace);
-ritualBtn.addEventListener("click", myFaveRitual);
+
+
+
 
 
 
@@ -54,7 +34,7 @@ function ritual() {
 for(let i = 0; i < profileBtns.length; i++) {
     if(profileBtns[i].id === "color") {
         profileBtns[i].addEventListener("click", color);
-    } else if(profileBtns[i].id === "place"); {
+    } else if(profileBtns[i].id === "place") {
         profileBtns[i].addEventListener("click", place);
     } else if (profileBtns[i].id === "ritual") {
         profileBtns[i].addEventListener("click", ritual);
@@ -63,30 +43,30 @@ for(let i = 0; i < profileBtns.length; i++) {
 
 
 //for-each with a switch statement
-profileBtns.forEach((button) => {
-    button.addEventListener("click", (event) => {
-        let favorite = "";
-        switch(event.target.id) {
-            case "color":
-                favorite = "blue";
-                break;
-             case "place":
-                 favorite = "my home";
-                 break;
-             case "ritual":
-                 favorite = "going to the gym";
-                 break;       
-        }
+// profileBtns.forEach((button) => {
+//     button.addEventListener("click", (event) => {
+//         let favorite = "";
+//         switch(event.target.id) {
+//             case "color":
+//                 favorite = "blue";
+//                 break;
+//              case "place":
+//                  favorite = "my home";
+//                  break;
+//              case "ritual":
+//                  favorite = "going to the gym";
+//                  break;       
+//         }
 
-        alert (`My favorite ${event.target.id} is ${favorite}`);
-    })
-}) 
-
-
+//         alert (`My favorite ${event.target.id} is ${favorite}`);
+//     })
+// }) 
 
 
 
-//step 3: combine using addEventListener
-colorBtn.addEventListener("click", color);
-placeBtn.addEventListener("click", place);
-ritualBtn.addEventListener("click", ritual);
+
+
+// //step 3: combine using addEventListener
+// colorBtn.addEventListener("click", color);
+// placeBtn.addEventListener("click", place);
+// ritualBtn.addEventListener("click", ritual);
